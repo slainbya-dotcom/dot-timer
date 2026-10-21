@@ -1,0 +1,15 @@
+{
+  "name": "dot-timer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Lightweight dot-matrix timers with chiptune chimes (Tauri)",
+  "scripts": {
+    "dev": "tauri dev",
+    "build:win": "tauri build --bundles msi",
+    "build:mac": "tauri build --target universal-apple-darwin --bundles dmg",
+    "test": "node tests/run-tests.js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
