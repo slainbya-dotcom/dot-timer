@@ -2,22 +2,7 @@
 
 The `.msi` has to be built on Windows and the `.dmg` on macOS. The steps are the same as for World Time.
 
-## Option A: GitHub Actions
-
-There are two separate workflows, so a slow Mac build never holds up the Windows one:
-
-| Workflow | Makes | File |
-|---|---|---|
-| **Build Windows installer** | `.msi` | `.github/workflows/build.yml` |
-| **Build macOS installer** | `.dmg` (Intel + Apple Silicon) | `.github/workflows/build-macos.yml` |
-
-1. Push this folder to its own GitHub repository, for example `dot-timer`.
-2. Go to **Actions**, pick a workflow on the left, and click **Run workflow**.
-3. Open the run, scroll to the bottom of its Summary page, and download the installer from **Artifacts**.
-
-Pushing a tag such as `v1.0.0` also builds the Windows `.msi` and puts it in a draft GitHub release.
-
-## Option B: build locally
+## build locally
 
 ### Windows (makes the .msi)
 

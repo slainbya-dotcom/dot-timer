@@ -2,7 +2,7 @@
 
 A lightweight countdown timer for Windows and macOS. It sits on your desktop as a small dot-matrix display, one timer per block. Each timer shows a label, the time left and a loading bar.
 
-<!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Timer next to World Time](docs/images/widget.png) -->
+![Dot Timer next to World Time](docs/images/widget.png)
 
 ## What it does
 
@@ -43,4 +43,4 @@ A lightweight countdown timer for Windows and macOS. It sits on your desktop as 
 
 See [BUILDING.md](BUILDING.md) for how to make the Windows `.msi` and macOS `.dmg` installers.
 
-<!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Timer next to World Time](docs/images/settings.png) -->
+![Dot Timer next to World Time](docs/images/settings.png)
