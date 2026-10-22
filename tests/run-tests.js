@@ -163,8 +163,8 @@ test('hi chimes sit higher than lo chimes', () => {
   assert.ok(Math.min(...hi) > Math.max(...lo));
 });
 
-// ---- World Time matching ----
-test('World Time width is measured exactly as its widget lays out', () => {
+// ---- Dot Clock matching ----
+test('Dot Clock width is measured exactly as its widget lays out', () => {
   const wt = { clocks: [{ label: 'London, UK', tz: 'Europe/London' }, { label: 'Sydney, Australia', tz: 'Australia/Sydney' }], use24h: true, dotSize: 4, dotColor: '#39ff7a' };
   const look = WT.worldTime.lookFrom(JSON.stringify(wt), new Date(at('2026-07-01T12:00:00')));
   const rows = wt.clocks.map((c) => ({ label: c.label, time: '12:00', zone: WT.time.abbreviation(c.tz, new Date(at('2026-07-01T12:00:00'))), day: true }));
@@ -172,7 +172,7 @@ test('World Time width is measured exactly as its widget lays out', () => {
   assert.strictEqual(look.dotSize, 4);
   assert.strictEqual(look.dotColor, '#39ff7a');
 });
-test('unreadable World Time settings are ignored', () => {
+test('unreadable Dot Clock settings are ignored', () => {
   assert.strictEqual(WT.worldTime.lookFrom('not json', new Date()), null);
 });
 

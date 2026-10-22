@@ -1,4 +1,4 @@
-/* Dot Timer settings window: timers, appearance (or match World Time), sound, window. */
+/* Dot Timer settings window: timers, appearance (or match Dot Clock), sound, window. */
 (async function () {
   'use strict';
   const WT = window.WT;
@@ -281,8 +281,8 @@
   function renderAppearance() {
     $('opt-match').checked = state.matchWorldTime;
     $('match-status').textContent = !state.matchWorldTime ? 'Using the settings below.'
-      : wtLook ? `Matched to World Time: ${wtLook.width} dots wide, ${wtLook.dotSize} px dots. Change its look in World Time.`
-        : 'World Time isn’t installed (or hasn’t been run yet), so the settings below are used.';
+      : wtLook ? `Matched to Dot Clock: ${wtLook.width} dots wide, ${wtLook.dotSize} px dots. Change its look in Dot Clock.`
+        : 'Dot Clock isn’t installed (or hasn’t been run yet), so the settings below are used.';
     $('look-fields').disabled = matched();
     const L = matched() ? wtLook : state;
     $('opt-dot').value = L.dotColor;
@@ -390,7 +390,7 @@
   buildGallery();
   renderAll();
 
-  $('about').textContent = 'Dot Timer 1.0.0 · works fully offline';
+  $('about').textContent = 'Dot Timer 1.1.0 · works fully offline';
   setInterval(() => { if (!document.hidden) refreshLive(); }, 500);
   setInterval(refreshWorldTime, 3000);
 })();

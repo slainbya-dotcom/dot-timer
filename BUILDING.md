@@ -22,7 +22,7 @@ The `.msi` has to be built on Windows and the `.dmg` on macOS. The steps are the
    npm run build:win
    ```
 
-4. The installer is written to `src-tauri\target\release\bundle\msi\Dot Timer_1.0.0_x64_en-US.msi`.
+4. The installer is written to `src-tauri\target\release\bundle\msi\Dot Timer_1.1.0_x64_en-US.msi`.
 
 ### macOS (makes a universal .dmg)
 

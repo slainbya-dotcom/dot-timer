@@ -14,7 +14,7 @@
     return {
       version: 1,
       timers: [],              // see normalizeTimer()
-      matchWorldTime: true,    // copy World Time's width, dot size and colours
+      matchWorldTime: true,    // copy Dot Clock's width, dot size and colours
       width: 130,              // widget width in dots when not matching
       dotColor: '#ffb000',
       dotSize: 3,

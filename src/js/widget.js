@@ -13,7 +13,7 @@
 
   let state = null;
   let early = null;
-  let wtRaw = null;      // World Time's settings JSON (string) or null
+  let wtRaw = null;      // Dot Clock's settings JSON (string) or null
   let wtLook = null;     // derived width/dots/colours
   let lastSig = '';
   let lastSize = '';
@@ -32,7 +32,7 @@
     return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${a})`;
   }
 
-  /** Appearance in use: World Time's when matching (and it's installed), else our own. */
+  /** Appearance in use: Dot Clock's when matching (and it's installed), else our own. */
   function look() {
     const m = state.matchWorldTime && wtLook;
     const src = m ? wtLook : state;

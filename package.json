@@ -1,7 +1,7 @@
 {
   "name": "dot-timer",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lightweight dot-matrix timers with chiptune chimes (Tauri)",
   "scripts": {
     "dev": "tauri dev",

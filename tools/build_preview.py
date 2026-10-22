@@ -1,10 +1,10 @@
 """Inlines CSS/JS into single-file HTML previews (with a fake Tauri bridge and
 sample timers) so the UI can be checked in any browser without building.
 
-  python3 tools/build_preview.py [out_dir] [path/to/world-time]
+  python3 tools/build_preview.py [out_dir] [path/to/dot-clock]
 
-If the World Time project is given, also writes side-by-side.html showing both
-widgets together, with Dot Timer matching World Time's look."""
+If the Dot Clock project is given, also writes side-by-side.html showing both
+widgets together, with Dot Timer matching Dot Clock's look."""
 import html, json, os, re, sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -80,8 +80,8 @@ if WT_ROOT:
 <style>body{margin:0;min-height:100vh;padding:24px;box-sizing:border-box;background:linear-gradient(135deg,#3a6186,#89253e);
 font:12px system-ui;color:#fff}iframe{border:0;display:block;background:transparent;width:100%%;}
 .cap{opacity:.75;margin:14px 0 6px}</style></head><body>
-<div class="cap">World Time</div><iframe id="a" style="height:70px" srcdoc="%s"></iframe>
-<div class="cap">Dot Timer (matching World Time)</div><iframe id="b" style="height:340px" srcdoc="%s"></iframe>
+<div class="cap">Dot Clock</div><iframe id="a" style="height:70px" srcdoc="%s"></iframe>
+<div class="cap">Dot Timer (matching Dot Clock)</div><iframe id="b" style="height:340px" srcdoc="%s"></iframe>
 </body></html>""" % (html.escape(wt_doc, quote=True), html.escape(timer_doc, quote=True))
     open(os.path.join(OUT, "side-by-side.html"), "w", encoding="utf-8").write(page)
 
