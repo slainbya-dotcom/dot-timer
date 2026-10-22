@@ -1,6 +1,6 @@
 # Dot Timer
 
-A lightweight countdown timer for Windows and macOS, built as a companion to [World Time](https://github.com/slainbya-dotcom/world-time). It sits on your desktop as a small dot-matrix display, one timer per block. Each timer shows a label, the time left and a loading bar.
+A lightweight countdown timer for Windows and macOS. It sits on your desktop as a small dot-matrix display, one timer per block. Each timer shows a label, the time left and a loading bar.
 
 <!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Timer next to World Time](docs/images/widget.png) -->
 
@@ -42,3 +42,5 @@ A lightweight countdown timer for Windows and macOS, built as a companion to [Wo
 ## Building it yourself
 
 See [BUILDING.md](BUILDING.md) for how to make the Windows `.msi` and macOS `.dmg` installers.
+
+<!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Timer next to World Time](docs/images/settings.png) -->
