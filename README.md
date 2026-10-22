@@ -43,4 +43,5 @@ A lightweight countdown timer for Windows and macOS. It sits on your desktop as 
 
 See [BUILDING.md](BUILDING.md) for how to make the Windows `.msi` and macOS `.dmg` installers.
 
+=======
 ![Dot Timer next to World Time](docs/images/settings.png)
